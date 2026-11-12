@@ -1,0 +1,881 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#f7f4ee" />
+    <title>Sangani Design Studio | Ar. Parthit Sangani — Architecture &amp; Interior Designing</title>
+    <meta
+      name="description"
+      content="Sangani Design Studio by Ar. Parthit Sangani in Vapi, Gujarat. Crafting bespoke architecture and refined interior experiences where function meets beauty."
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon.png" />
+    <link rel="icon" type="image/png" href="./images/SDS Logo.png" />
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Architectural Scroll Progress Bar -->
+    <div id="scroll-progress" class="scroll-progress"></div>
+
+    <!-- Header & Navigation -->
+    <header id="site-header" class="site-header">
+      <div class="container header-inner">
+        <a href="#top" class="brand-lockup" aria-label="Sangani Design Studio Home">
+          <div class="brand-badge">
+            <img src="./images/sds-logo-trans.png" alt="Sangani Design Studio Logo" class="brand-logo-img" />
+          </div>
+          <div>
+            <span class="brand-title">Sangani Design Studio</span>
+            <span class="brand-sub">Ar. Parthit Sangani</span>
+          </div>
+        </a>
+
+        <!-- Desktop Sliding-Pill Navigation -->
+        <nav class="desktop-nav" id="desktop-nav" aria-label="Primary Navigation">
+          <span class="nav-pill-bg" id="nav-pill-bg"></span>
+          <a href="#top" class="nav-link active" data-section="top">Home</a>
+          <a href="#portfolio" class="nav-link" data-section="portfolio">Portfolio</a>
+          <a href="#services" class="nav-link" data-section="services">Services</a>
+          <a href="#architect" class="nav-link" data-section="architect">The Architect</a>
+          <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+        </nav>
+
+        <!-- Desktop CTA Actions -->
+        <div class="desktop-actions">
+          <a href="tel:+917622005681" class="phone-pill">
+            <i data-lucide="phone" style="width: 14px; height: 14px; color: var(--bronze)"></i>
+            <span>+91 76220 05681</span>
+          </a>
+          <a href="./appointment.html" class="btn-anim btn-primary btn-sm" style="text-transform: uppercase; letter-spacing: 0.08em">
+            <i data-lucide="calendar" style="width: 14px; height: 14px"></i>
+            <span>Book Appointment</span>
+          </a>
+        </div>
+
+        <!-- Mobile Actions -->
+        <div class="mobile-actions">
+          <a href="./appointment.html" class="mobile-book-btn">
+            <i data-lucide="calendar" style="width: 14px; height: 14px; color: var(--bronze-light)"></i>
+            <span>Book</span>
+          </a>
+          <button type="button" id="menu-toggle-btn" class="menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="mobile-drawer">
+            <i id="menu-icon-open" data-lucide="menu" style="width: 20px; height: 20px"></i>
+            <i id="menu-icon-close" data-lucide="x" class="hidden" style="width: 20px; height: 20px"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer Backdrop & Drawer -->
+    <div id="mobile-drawer-backdrop" class="mobile-drawer-backdrop" aria-hidden="true"></div>
+    <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+      <div class="mobile-drawer-links">
+        <a href="#top" class="mobile-drawer-link">
+          <span>Home</span>
+          <i data-lucide="arrow-up-right" style="width: 16px; height: 16px; color: var(--bronze)"></i>
+        </a>
+        <a href="#portfolio" class="mobile-drawer-link">
+          <span>Portfolio</span>
+          <i data-lucide="arrow-up-right" style="width: 16px; height: 16px; color: var(--bronze)"></i>
+        </a>
+        <a href="#services" class="mobile-drawer-link">
+          <span>Services</span>
+          <i data-lucide="arrow-up-right" style="width: 16px; height: 16px; color: var(--bronze)"></i>
+        </a>
+        <a href="#architect" class="mobile-drawer-link">
+          <span>The Architect</span>
+          <i data-lucide="arrow-up-right" style="width: 16px; height: 16px; color: var(--bronze)"></i>
+        </a>
+        <a href="#contact" class="mobile-drawer-link">
+          <span>Contact</span>
+          <i data-lucide="arrow-up-right" style="width: 16px; height: 16px; color: var(--bronze)"></i>
+        </a>
+      </div>
+
+      <div class="mobile-drawer-divider"></div>
+
+      <a href="./appointment.html" class="btn-anim btn-primary btn-md" style="width: 100%">
+        <span>Book Appointment on WhatsApp</span>
+        <span class="btn-icon-right">
+          <i data-lucide="message-circle" style="width: 16px; height: 16px"></i>
+        </span>
+      </a>
+
+      <div class="mobile-quick-grid">
+        <a href="tel:+917622005681" class="mobile-quick-item">
+          <i data-lucide="phone" style="width: 14px; height: 14px; color: var(--bronze)"></i>
+          <span>Call</span>
+        </a>
+        <a href="https://www.instagram.com/sangani_design_studio/" target="_blank" rel="noopener noreferrer" class="mobile-quick-item">
+          <i data-lucide="instagram" style="width: 14px; height: 14px; color: var(--bronze)"></i>
+          <span>Instagram</span>
+        </a>
+        <a href="https://maps.app.goo.gl/1FyUN5CiPzHSt5fXA" target="_blank" rel="noopener noreferrer" class="mobile-quick-item">
+          <i data-lucide="map-pin" style="width: 14px; height: 14px; color: var(--bronze)"></i>
+          <span>Map</span>
+        </a>
+      </div>
+    </div>
+
+    <main>
+      <!-- =================================================================
+           HERO SECTION
+           ================================================================= -->
+      <section id="top" class="hero-section arch-grid-bg">
+        <div class="hero-glow-1"></div>
+        <div class="hero-glow-2"></div>
+
+        <div class="container">
+          <!-- Top Metadata Bar -->
+          <div class="meta-strip hero-fade" style="animation-delay: 0.04s">
+            <div class="meta-right">
+              <a href="https://www.instagram.com/sangani_design_studio/" target="_blank" rel="noopener noreferrer" class="meta-link">
+                <i data-lucide="instagram" style="width: 14px; height: 14px"></i>
+                <span>@sangani_design_studio</span>
+              </a>
+              <span style="opacity: 0.25">|</span>
+              <a href="https://maps.app.goo.gl/1FyUN5CiPzHSt5fXA" target="_blank" rel="noopener noreferrer" class="meta-link">
+                <i data-lucide="map-pin" style="width: 14px; height: 14px; color: var(--bronze)"></i>
+                <span>Vapi Studio Directions</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Split Grid -->
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <div class="eyebrow-pill hero-fade" style="animation-delay: 0.08s">
+                <i data-lucide="sparkles" style="width: 14px; height: 14px; color: var(--bronze)"></i>
+                <span>Led by Ar. Parthit Sangani</span>
+              </div>
+
+              <h1 class="hero-title hero-fade" style="animation-delay: 0.14s">
+                Beyond Spaces. <span class="italic-accent">Into Experiences.</span>
+                <span class="underline-draw">Where Every Detail Matters</span>
+              </h1>
+
+              <p class="hero-quote hero-fade" style="animation-delay: 0.24s">
+                We transform ordinary spaces into extraordinary experiences, blending thoughtful design, refined aesthetics, and everyday functionality to create interiors that feel as beautiful as they look.
+              </p>
+
+              <div class="hero-ctas hero-fade" style="animation-delay: 0.34s">
+                <a href="./appointment.html" class="btn-anim btn-primary btn-lg">
+                  <i data-lucide="calendar" style="width: 16px; height: 16px; color: var(--bronze-light)"></i>
+                  <span>Book Appointment</span>
+                </a>
+
+                <a href="#portfolio" class="btn-anim btn-outline btn-lg">
+                  <span class="btn-icon-left">
+                    <i data-lucide="compass" style="width: 16px; height: 16px"></i>
+                  </span>
+                  <span>Explore Selected Works</span>
+                </a>
+              </div>
+
+              <div class="hero-stats hero-fade" style="animation-delay: 0.44s">
+                <div class="stat-col">
+                  <p class="stat-val">Zero Guesswork</p>
+                  <p class="stat-label">3D Views Before Civil Work Begins</p>
+                </div>
+                <div class="stat-col">
+                  <p class="stat-val">Budget Control</p>
+                  <p class="stat-label">Itemized BOQ Without Hidden Costs</p>
+                </div>
+                <div class="stat-col">
+                  <p class="stat-val">Site Audits</p>
+                  <p class="stat-label">Quality Checks by Principal Architect</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-visual hero-fade-scale" style="animation-delay: 0.2s">
+              <div class="hero-frame">
+                <div class="hero-img-wrap">
+                  <img
+                    id="hero-parallax-img"
+                    src="./images/hero-living.jpg"
+                    alt="Sangani Design Studio double-height warm travertine and timber living room"
+                    class="hero-parallax-img"
+                  />
+                </div>
+                <div class="hero-vignette"></div>
+                <div class="hero-overlay-bar">
+                  <div class="hero-plate">
+                    <p class="hero-plate-label">Featured Residence</p>
+                    <p class="hero-plate-title">The Sunlit Courtyard Pavilion</p>
+                  </div>
+                  <a href="tel:+917622005681" class="hero-call-chip">
+                    <i data-lucide="phone" style="width: 14px; height: 14px"></i>
+                    <span>+91 76220 05681</span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="availability-badge">
+                <span class="green-dot"></span>
+                <span>Now Accepting 2026–27 Projects</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           PORTFOLIO SECTION
+           ================================================================= -->
+      <section id="portfolio" class="section-pad portfolio-section">
+        <div class="container">
+          <div class="section-header reveal-item reveal-up">
+            <div>
+              <span class="section-kicker">01 / Selected Works</span>
+              <h2 class="section-title">
+                Architecture &amp; Spatial <span class="accent">Narratives</span>
+              </h2>
+            </div>
+
+            <!-- Sliding Pill Filter Bar -->
+            <div class="filter-bar" id="filter-bar" role="tablist" aria-label="Filter projects by category">
+              <span class="filter-pill-bg" id="filter-pill-bg"></span>
+              <button type="button" class="filter-btn active" data-category="All">All</button>
+              <button type="button" class="filter-btn" data-category="Architecture">Architecture</button>
+              <button type="button" class="filter-btn" data-category="Interiors">Interiors</button>
+              <button type="button" class="filter-btn" data-category="Commercial">Commercial</button>
+            </div>
+          </div>
+
+          <div class="arch-rule divider-my"></div>
+
+          <!-- Project Grid (Populated & Animated by app.js) -->
+          <div id="portfolio-grid" class="portfolio-grid"></div>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           SERVICES SECTION
+           ================================================================= -->
+      <section id="services" class="section-pad">
+        <div class="container">
+          <div class="section-header reveal-item reveal-up">
+            <div>
+              <span class="section-kicker">02 / Studio Capabilities</span>
+              <h2 class="section-title">
+                Comprehensive Design <span class="accent">Disciplines</span>
+              </h2>
+            </div>
+            <p class="section-desc">
+              From early feasibility sketches and Vastu alignment to bespoke joinery and turnkey handover across Gujarat.
+            </p>
+          </div>
+
+          <div class="arch-rule divider-my"></div>
+
+          <div class="services-grid">
+            <!-- Service 01 -->
+            <article class="service-card reveal-item reveal-up" data-delay="0">
+              <div>
+                <div class="flex-between">
+                  <div class="service-icon-box">
+                    <i data-lucide="compass" style="width: 20px; height: 20px"></i>
+                  </div>
+                  <span class="font-mono" style="font-size: 12px; font-weight: 500; color: var(--bronze-dark)">01</span>
+                </div>
+                <h3 style="margin: 1.5rem 0 0; font-size: 1.5rem; font-weight: 600">Architectural Design</h3>
+                <p class="font-mono" style="margin: 0.25rem 0 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--bronze-dark)">
+                  Concept to Structural Clarity
+                </p>
+                <p style="margin: 0.75rem 0 0; font-size: 0.875rem; line-height: 1.65; color: var(--body-muted)">
+                  Site-responsive residential bungalows, villas, and commercial edifices sculpted with natural daylight, cross-ventilation, and enduring structural proportions.
+                </p>
+                <ul class="service-list">
+                  <li><i data-lucide="check" style="width: 14px; height: 14px; color: var(--bronze)"></i><span>Master Site Planning</span></li>
+                  <li><i data-lucide="check" style="width: 14px; height: 14px; color: var(--bronze)"></i><span>3D Massing &amp; Elevation</span></li>
+                  <li><i data-lucide="check" style="width: 14px; height: 14px; color: var(--bronze)"></i><span>Working Drawings</span></li>
+                  <li><i data-lucide="check" style="width: 14px; height: 14px; color: var(--bronze)"></i><span>Structural Coordination</span></li>
+                </ul>
+              </div>
+              <div style="margin-top: 1.5rem">
+                <a href="./appointment.html?service=Architectural%20Design" class="btn-anim btn-outline btn-sm" style="width: 100%; justify-content: space-between; text-transform: uppercase; letter-spacing: 0.08em">
+                  <span>Consult for Architectural</span>
+                  <span class="btn-icon-right"><i data-lucide="arrow-up-right" style="width: 15px; height: 15px"></i></span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Service 02 -->
+            <article class="service-card reveal-item reveal-up" data-delay="60">
+              <div>
+                <div class="flex-between">
+                  <div class="service-icon-box">
+                    <i data-lucide="armchair" style="width: 20px; height: 20px"></i>
+                  </div>
+                  <span class="font-mono" style="font-size: 12px; font-weight: 500; color: var(--bronze-dark)">02</span>
+                </div>
+                <h3 style="margin: 1.5rem 0 0; font-size: 1.5rem; font-weight: 600">Luxury Interior Design</h3>
+                <p class="font-mono" style="margin: 0.25rem 0 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--bronze-dark)">
+                  Tactile Materiality &amp; Spatial Flow
+                </p>
+                <p style="margin: 0.75rem 0 0; font-size: 0.875rem; line-height: 1.65; color: var(--body-muted)">
+                  Bespoke residential and penthouse interiors curated around warm timber, natural stone, custom millwork, and balanced ambient lighting tailored to your lifestyle.
+                </p>
+                <ul class="service-list">
+                  <li><i data-lucide="check" style="width: 14px; height: 14px; color: var(--bronze)"></i><span>Space Planning</span></li>
+                  <li><i data-lucide="check" style="width: 14px; height: 14px; color: var(--bronze)"></i><span>Custom Furniture &amp; Millwork</span></li>
+                  <li><i data-lucide="check" style="width: 14px; height: 14px; color: var(--bronze)"></i><span>Lighting &amp; Ceiling Design</span></li>
+                  <li><i data-lucide="check" style="width: 14px; height: 14px; color: var(--bronze)"></i><span>Material &amp; Decor Curation</span></li>
+                </ul>
+              </div>
+              <div style="margin-top: 1.5rem">
+                <a href="./appointment.html?service=Luxury%20Interior%20Design" class="btn-anim btn-outline btn-sm" style="width: 100%; justify-content: space-between; text-transform: uppercase; letter-spacing: 0.08em">
+                  <span>Consult for Interiors</span>
+                  <span class="btn-icon-right"><i data-lucide="arrow-up-right" style="width: 15px; height: 15px"></i></span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Service 03 -->
+            <article class="service-card reveal-item reveal-up" data-delay="120">
+              <div>
+                <div class="flex-between">
+                  <div class="service-icon-box">
+                    <i data-lucide="building-2" style="width: 20px; height: 20px"></i>
+                  </div>
+                  <span class="font-mono" style="font-size: 12px; font-weight: 500; color: var(--bronze-dark)">03</span>
+                </div>
+                <h3 style="margin: 1.5rem 0 0; font-size: 1.5rem; font-weight: 600">Commercial &amp; Workspaces</h3>
+                <p class="font-mono" style="margin: 0.25rem 0 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--bronze-dark)">
+                  Brand-Driven Spatial Identity
+                </p>
+                <p style="margin: 0.75rem 0 0; font-size: 0.875rem; line-height: 1.65; color: var(--body-muted)">
+                  Executive studios, boutique showrooms, hospitality lounges, and corporate offices engineered for productivity, client impression, and acoustic comfort.
+                </p>
+                <ul class="service-list">
+                  <li><i data-lucide="check" style="width: 14px; height: 14px; color: var(--bronze)"></i><span>Brand Spatial Concept</span></li>
+                  <li><i data-lucide="check" style="width: 14px; height: 14px; color: var(--bronze)"></i><span>Acoustic &amp; Lighting Layout</span></li>
+                  <li><i data-lucide="check" style="width: 14px; height: 14px; color: var(--bronze)"></i><span>Reception &amp; Lounge Design</span></li>
+                  <li><i data-lucide="check" style="width: 14px; height: 14px; color: var(--bronze)"></i><span>Signage Integration</span></li>
+                </ul>
+              </div>
+              <div style="margin-top: 1.5rem">
+                <a href="./appointment.html?service=Commercial%20%26%20Workspaces" class="btn-anim btn-outline btn-sm" style="width: 100%; justify-content: space-between; text-transform: uppercase; letter-spacing: 0.08em">
+                  <span>Consult for Commercial</span>
+                  <span class="btn-icon-right"><i data-lucide="arrow-up-right" style="width: 15px; height: 15px"></i></span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Service 04 -->
+            <article class="service-card reveal-item reveal-up" data-delay="180">
+              <div>
+                <div class="flex-between">
+                  <div class="service-icon-box">
+                    <i data-lucide="ruler" style="width: 20px; height: 20px"></i>
+                  </div>
+                  <span class="font-mono" style="font-size: 12px; font-weight: 500; color: var(--bronze-dark)">04</span>
+                </div>
+                <h3 style="margin: 1.5rem 0 0; font-size: 1.5rem; font-weight: 600">Turnkey Execution</h3>
+                <p class="font-mono" style="margin: 0.25rem 0 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--bronze-dark)">
+                  Seamless Site Supervision
+                </p>
+                <p style="margin: 0.75rem 0 0; font-size: 0.875rem; line-height: 1.65; color: var(--body-muted)">
+                  End-to-end project management from civil groundwork and vendor tendering to rigorous quality inspections, ensuring your vision is built down to the millimeter.
+                </p>
+                <ul class="service-list">
+                  <li><i data-lucide="check" style="width: 14px; height: 14px; color: var(--bronze)"></i><span>BOQ &amp; Cost Estimation</span></li>
+                  <li><i data-lucide="check" style="width: 14px; height: 14px; color: var(--bronze)"></i><span>Contractor Coordination</span></li>
+                  <li><i data-lucide="check" style="width: 14px; height: 14px; color: var(--bronze)"></i><span>On-Site Quality Audits</span></li>
+                  <li><i data-lucide="check" style="width: 14px; height: 14px; color: var(--bronze)"></i><span>Timely Handover</span></li>
+                </ul>
+              </div>
+              <div style="margin-top: 1.5rem">
+                <a href="./appointment.html?service=Turnkey%20Execution" class="btn-anim btn-outline btn-sm" style="width: 100%; justify-content: space-between; text-transform: uppercase; letter-spacing: 0.08em">
+                  <span>Consult for Turnkey</span>
+                  <span class="btn-icon-right"><i data-lucide="arrow-up-right" style="width: 15px; height: 15px"></i></span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Service 05 -->
+            <article class="service-card reveal-item reveal-up" data-delay="240">
+              <div>
+                <div class="flex-between">
+                  <div class="service-icon-box">
+                    <i data-lucide="layers" style="width: 20px; height: 20px"></i>
+                  </div>
+                  <span class="font-mono" style="font-size: 12px; font-weight: 500; color: var(--bronze-dark)">05</span>
+                </div>
+                <h3 style="margin: 1.5rem 0 0; font-size: 1.5rem; font-weight: 600">3D Visualization &amp; VR</h3>
+                <p class="font-mono" style="margin: 0.25rem 0 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--bronze-dark)">
+                  Experience Before Construction
+                </p>
+                <p style="margin: 0.75rem 0 0; font-size: 0.875rem; line-height: 1.65; color: var(--body-muted)">
+                  Photorealistic architectural renderings and interactive walkthroughs allowing you to inspect textures, sunlight angles, and finishes prior to site execution.
+                </p>
+                <ul class="service-list">
+                  <li><i data-lucide="check" style="width: 14px; height: 14px; color: var(--bronze)"></i><span>Photorealistic Renders</span></li>
+                  <li><i data-lucide="check" style="width: 14px; height: 14px; color: var(--bronze)"></i><span>Daylight &amp; Shadow Studies</span></li>
+                  <li><i data-lucide="check" style="width: 14px; height: 14px; color: var(--bronze)"></i><span>Material Moodboards</span></li>
+                  <li><i data-lucide="check" style="width: 14px; height: 14px; color: var(--bronze)"></i><span>Client Walkthroughs</span></li>
+                </ul>
+              </div>
+              <div style="margin-top: 1.5rem">
+                <a href="./appointment.html?service=3D%20Visualization%20%26%20Consultation" class="btn-anim btn-outline btn-sm" style="width: 100%; justify-content: space-between; text-transform: uppercase; letter-spacing: 0.08em">
+                  <span>Consult for 3D</span>
+                  <span class="btn-icon-right"><i data-lucide="arrow-up-right" style="width: 15px; height: 15px"></i></span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Service 06 -->
+            <article class="service-card reveal-item reveal-up" data-delay="300">
+              <div>
+                <div class="flex-between">
+                  <div class="service-icon-box">
+                    <i data-lucide="sparkles" style="width: 20px; height: 20px"></i>
+                  </div>
+                  <span class="font-mono" style="font-size: 12px; font-weight: 500; color: var(--bronze-dark)">06</span>
+                </div>
+                <h3 style="margin: 1.5rem 0 0; font-size: 1.5rem; font-weight: 600">Vastu &amp; Renovation</h3>
+                <p class="font-mono" style="margin: 0.25rem 0 0; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--bronze-dark)">
+                  Harmonious Transformations
+                </p>
+                <p style="margin: 0.75rem 0 0; font-size: 0.875rem; line-height: 1.65; color: var(--body-muted)">
+                  Thoughtful architectural retrofits and Vastu-aligned layouts that modernize existing homes and commercial properties without compromising structural harmony.
+                </p>
+                <ul class="service-list">
+                  <li><i data-lucide="check" style="width: 14px; height: 14px; color: var(--bronze)"></i><span>Vastu Spatial Alignment</span></li>
+                  <li><i data-lucide="check" style="width: 14px; height: 14px; color: var(--bronze)"></i><span>Structural Retrofitting</span></li>
+                  <li><i data-lucide="check" style="width: 14px; height: 14px; color: var(--bronze)"></i><span>Facade Uplift</span></li>
+                  <li><i data-lucide="check" style="width: 14px; height: 14px; color: var(--bronze)"></i><span>Adaptive Reuse</span></li>
+                </ul>
+              </div>
+              <div style="margin-top: 1.5rem">
+                <a href="./appointment.html?service=Vastu%20%26%20Renovation" class="btn-anim btn-outline btn-sm" style="width: 100%; justify-content: space-between; text-transform: uppercase; letter-spacing: 0.08em">
+                  <span>Consult for Renovation</span>
+                  <span class="btn-icon-right"><i data-lucide="arrow-up-right" style="width: 15px; height: 15px"></i></span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           ARCHITECTURAL WORKFLOW (DARK SECTION)
+           ================================================================= -->
+      <section class="section-pad process-section arch-grid-dark">
+        <div class="process-glow"></div>
+        <div class="container">
+          <div class="section-header reveal-item reveal-up">
+            <div>
+              <span class="section-kicker light">03 / Architectural Workflow</span>
+              <h2 class="section-title light">
+                From Vision to <span class="accent">Built Reality</span>
+              </h2>
+            </div>
+            <p class="section-desc" style="color: var(--dark-muted)">
+              Every commission follows a transparent four-stage blueprint with clear milestones, 3D clarity, and disciplined site supervision.
+            </p>
+          </div>
+
+          <div class="arch-rule dark divider-my"></div>
+
+          <div class="process-grid" id="process-grid">
+            <button type="button" class="process-card active" data-step="0">
+              <div>
+                <div class="flex-between">
+                  <span class="process-num">01</span>
+                  <span class="process-duration"><i data-lucide="clock" style="width: 12px; height: 12px"></i> Week 1 – 2</span>
+                </div>
+                <h3 style="margin: 1.25rem 0 0; font-size: 1.5rem; font-weight: 500">Discovery &amp; Site Brief</h3>
+                <p style="margin: 0.75rem 0 0; font-size: 0.875rem; line-height: 1.65; color: var(--dark-copy)">
+                  We begin with an in-depth conversation at our Vapi studio or your site—understanding lifestyle aspirations, Vastu preferences, functional requirements, and budget.
+                </p>
+              </div>
+              <div class="process-track"><div class="process-fill"></div></div>
+            </button>
+
+            <button type="button" class="process-card" data-step="1">
+              <div>
+                <div class="flex-between">
+                  <span class="process-num">02</span>
+                  <span class="process-duration"><i data-lucide="clock" style="width: 12px; height: 12px"></i> Week 3 – 5</span>
+                </div>
+                <h3 style="margin: 1.25rem 0 0; font-size: 1.5rem; font-weight: 500">Concept &amp; 3D Visualization</h3>
+                <p style="margin: 0.75rem 0 0; font-size: 0.875rem; line-height: 1.65; color: var(--dark-copy)">
+                  Spatial zoning transforms into sculpted floor plans, material moodboards, and photorealistic 3D views so you experience light and volume before building.
+                </p>
+              </div>
+              <div class="process-track"><div class="process-fill"></div></div>
+            </button>
+
+            <button type="button" class="process-card" data-step="2">
+              <div>
+                <div class="flex-between">
+                  <span class="process-num">03</span>
+                  <span class="process-duration"><i data-lucide="clock" style="width: 12px; height: 12px"></i> Week 6 – 8</span>
+                </div>
+                <h3 style="margin: 1.25rem 0 0; font-size: 1.5rem; font-weight: 500">Technical Detailing &amp; BOQ</h3>
+                <p style="margin: 0.75rem 0 0; font-size: 0.875rem; line-height: 1.65; color: var(--dark-copy)">
+                  Precision working drawings covering civil, electrical, plumbing, HVAC, custom carpentry joinery, and itemized vendor specifications.
+                </p>
+              </div>
+              <div class="process-track"><div class="process-fill"></div></div>
+            </button>
+
+            <button type="button" class="process-card" data-step="3">
+              <div>
+                <div class="flex-between">
+                  <span class="process-num">04</span>
+                  <span class="process-duration"><i data-lucide="clock" style="width: 12px; height: 12px"></i> Site Completion</span>
+                </div>
+                <h3 style="margin: 1.25rem 0 0; font-size: 1.5rem; font-weight: 500">Execution &amp; Handover</h3>
+                <p style="margin: 0.75rem 0 0; font-size: 0.875rem; line-height: 1.65; color: var(--dark-copy)">
+                  Dedicated site visits by Ar. Parthit Sangani and our studio team to verify craftsmanship, proportions, lighting calibration, and final styling.
+                </p>
+              </div>
+              <div class="process-track"><div class="process-fill"></div></div>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           PRINCIPAL ARCHITECT SECTION
+           ================================================================= -->
+      <section id="architect" class="section-pad">
+        <div class="container">
+          <div class="architect-grid">
+            <div class="architect-photo-col reveal-item reveal-right">
+              <div style="max-width: 28rem; margin: 0 auto">
+                <div class="portrait-card">
+                  <img src="./images/parthit-sangani.jpg" alt="Ar. Parthit Sangani — Sangani Design Studio" />
+                </div>
+                <div style="display: flex">
+                  <div class="portrait-pill">
+                    <img src="./images/sds-logo-trans.png" alt="SDS Logo" class="brand-logo-img" style="height: 18px; width: auto" />
+                    <div style="border-left: 1px solid rgba(247, 244, 238, 0.16); padding-left: 0.75rem; font-size: 12px">
+                      <p style="margin: 0; font-weight: 600">Ar. Parthit Sangani</p>
+                      <p class="font-mono" style="margin: 0; font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--bronze-light)">
+                        Architect • Vapi
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="architect-copy-col reveal-item reveal-left" data-delay="100">
+              <span class="section-kicker">04 / The Principal Architect</span>
+              <h2 class="section-title" style="margin-top: 0.5rem">Ar. Parthit Sangani</h2>
+              <p class="font-mono" style="margin: 0.25rem 0 0; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--stone)">
+                Architecture | Interior Designing
+              </p>
+
+              <div class="arch-rule divider-my"></div>
+
+              <div class="quote-box">
+                <i data-lucide="quote" style="width: 30px; height: 30px; color: rgba(181, 132, 83, 0.55)"></i>
+                <blockquote class="quote-text">
+                  “We transform ordinary spaces into extraordinary experiences, blending thoughtful design, refined aesthetics, and everyday functionality to create interiors that feel as beautiful as they look.”
+                </blockquote>
+              </div>
+
+              <p style="margin: 1.5rem 0 0; font-size: 1rem; line-height: 1.7; color: var(--body-muted)">
+                At <strong style="color: var(--obsidian)">Sangani Design Studio</strong>, every commission begins by listening closely to the people who will inhabit the space. Based in Vapi, Gujarat, Ar. Parthit Sangani combines disciplined architectural geometry, natural material honesty, and thoughtful daylighting to craft homes and workplaces that feel deeply personal and effortless to live in.
+              </p>
+
+              <div class="flex-wrap-gap cta-row-mobile-full" style="margin-top: 2rem">
+                <a href="./appointment.html" class="btn-anim btn-primary btn-lg">
+                  <i data-lucide="calendar" style="width: 16px; height: 16px; color: var(--bronze-light)"></i>
+                  <span>Schedule a Studio Meeting</span>
+                </a>
+
+                <a href="https://www.instagram.com/sangani_design_studio/" target="_blank" rel="noopener noreferrer" class="btn-anim btn-outline btn-lg">
+                  <span class="btn-icon-left"><i data-lucide="instagram" style="width: 16px; height: 16px"></i></span>
+                  <span>Follow @sangani_design_studio</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           CONTACT & STUDIO VISIT SECTION
+           ================================================================= -->
+      <section id="contact" class="section-pad contact-section">
+        <div class="container">
+          <div class="section-header reveal-item reveal-up">
+            <div>
+              <span class="section-kicker">05 / Visit &amp; Connect</span>
+              <h2 class="section-title">Visit Our <span class="accent">Vapi Studio</span></h2>
+            </div>
+            <p style="margin: 0; font-size: 0.875rem; color: var(--body-muted)">
+              Studio Hours: <strong style="color: var(--obsidian)">Mon – Sat • 10:00 AM – 7:30 PM</strong>
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <!-- Dark Studio Card -->
+            <div class="contact-card-col reveal-item reveal-up">
+              <div class="dark-studio-card arch-grid-dark">
+                <div class="card-dark-header">
+                  <div>
+                    <img src="./images/sds-logo-trans.png" alt="Sangani Design Studio Logo" class="brand-logo-img" style="height: 32px; width: auto; margin-bottom: 0.25rem" />
+                    <p class="font-display" style="margin: 0.5rem 0 0; font-size: 1.875rem; font-weight: 500">
+                      Sangani Design Studio
+                    </p>
+                    <p class="font-mono" style="margin: 0.2rem 0 0; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--bronze-light)">
+                      Ar. Parthit Sangani • Architect
+                    </p>
+                  </div>
+                  <span class="studio-badge-pill">Vapi • Gujarat</span>
+                </div>
+
+                <div class="studio-info-stack">
+                  <div class="studio-addr-row">
+                    <div class="studio-info-icon">
+                      <i data-lucide="map-pin" style="width: 20px; height: 20px"></i>
+                    </div>
+                    <div>
+                      <p class="card-kicker">Studio Address</p>
+                      <p style="margin: 0.25rem 0 0; font-size: 0.95rem; line-height: 1.6">
+                        B-234, 2nd Floor, Sun Trade Center,<br />
+                        Near Gujarat Gas Office, G.I.D.C. Char Rasta,<br />
+                        N.H.48, Vapi - 396195, Gujarat
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="studio-info-row">
+                    <div class="studio-info-left">
+                      <div class="studio-info-icon">
+                        <i data-lucide="phone" style="width: 20px; height: 20px"></i>
+                      </div>
+                      <div class="studio-info-copy">
+                        <p class="card-kicker">Phone &amp; WhatsApp</p>
+                        <a href="tel:+917622005681" style="font-size: 1rem; font-weight: 500">+91 76220 05681</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="studio-info-row">
+                    <div class="studio-info-left">
+                      <div class="studio-info-icon">
+                        <i data-lucide="mail" style="width: 20px; height: 20px"></i>
+                      </div>
+                      <div class="studio-info-copy">
+                        <p class="card-kicker">Email Inquiries</p>
+                        <a href="mailto:sanganidesignstudio@gmail.com" class="studio-email-link">
+                          sanganidesignstudio@gmail.com
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex-wrap-gap cta-row-mobile-full">
+                  <a href="https://maps.app.goo.gl/1FyUN5CiPzHSt5fXA" target="_blank" rel="noopener noreferrer" class="btn-anim btn-bronze btn-md">
+                    <i data-lucide="map-pin" style="width: 16px; height: 16px"></i>
+                    <span>Open Google Maps</span>
+                    <span class="btn-icon-right"><i data-lucide="arrow-up-right" style="width: 16px; height: 16px"></i></span>
+                  </a>
+
+                  <a href="https://www.instagram.com/sangani_design_studio/" target="_blank" rel="noopener noreferrer" class="btn-anim btn-outline-light btn-md">
+                    <span class="btn-icon-left"><i data-lucide="instagram" style="width: 16px; height: 16px"></i></span>
+                    <span>@sangani_design_studio</span>
+                    <span class="btn-icon-right"><i data-lucide="arrow-up-right" style="width: 16px; height: 16px"></i></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Light WhatsApp CTA Card -->
+            <div class="contact-cta-col reveal-item reveal-up" data-delay="120">
+              <div class="light-cta-card">
+                <div>
+                  <div class="whatsapp-badge-box">
+                    <i data-lucide="message-circle" style="width: 24px; height: 24px"></i>
+                  </div>
+                  <h3 style="margin: 1.25rem 0 0; font-size: 1.875rem; font-weight: 500">
+                    Start Your Space Transformation
+                  </h3>
+                  <p style="margin: 0.75rem 0 0; font-size: 0.95rem; line-height: 1.65; color: var(--body-muted)">
+                    Ready to discuss your villa, apartment interior, or commercial workspace? Schedule a dedicated consultation with
+                    <strong style="color: var(--obsidian)">Ar. Parthit Sangani</strong> and send your project brief directly via WhatsApp in under 60 seconds.
+                  </p>
+
+                  <div class="benefit-box">
+                    <div class="benefit-row">
+                      <i data-lucide="check" style="width: 16px; height: 16px; color: var(--bronze)"></i>
+                      <span>Select project scope, property type &amp; budget</span>
+                    </div>
+                    <div class="benefit-row">
+                      <i data-lucide="check" style="width: 16px; height: 16px; color: var(--bronze)"></i>
+                      <span>Choose studio meeting, site visit, or call</span>
+                    </div>
+                    <div class="benefit-row">
+                      <i data-lucide="check" style="width: 16px; height: 16px; color: var(--bronze)"></i>
+                      <span>Instant pre-filled WhatsApp confirmation</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="whatsapp-card-actions">
+                  <a href="./appointment.html" class="btn-anim btn-whatsapp btn-lg">
+                    <span class="btn-icon-left"><i data-lucide="calendar" style="width: 16px; height: 16px"></i></span>
+                    <span>Book Appointment via WhatsApp</span>
+                  </a>
+
+                  <a href="https://maps.app.goo.gl/1FyUN5CiPzHSt5fXA" target="_blank" rel="noopener noreferrer" class="map-sub-link">
+                    <span class="btn-icon-left"><i data-lucide="map-pin" style="width: 14px; height: 14px; color: var(--bronze)"></i></span>
+                    <span>Sun Trade Center, G.I.D.C. Char Rasta, Vapi</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =================================================================
+         FOOTER
+         ================================================================= -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand-col">
+            <a href="#top" class="brand-lockup dark">
+              <div class="brand-badge">
+                <img src="./images/sds-logo-trans.png" alt="Sangani Design Studio Logo" class="brand-logo-img" />
+              </div>
+              <div>
+                <span class="brand-title">Sangani Design Studio</span>
+                <span class="brand-sub">Ar. Parthit Sangani</span>
+              </div>
+            </a>
+            <p style="margin: 1.25rem 0 0; max-width: 24rem; font-size: 0.875rem; line-height: 1.65; color: var(--dark-muted)">
+              We transform ordinary spaces into extraordinary experiences, blending thoughtful design, refined aesthetics, and everyday functionality to create interiors that feel as beautiful as they look.
+            </p>
+            <div style="margin-top: 1.5rem">
+              <a href="./appointment.html" class="btn-anim btn-bronze btn-sm">
+                <i data-lucide="calendar" style="width: 14px; height: 14px"></i>
+                <span>Book Consultation</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-nav-col">
+            <p class="footer-heading">Navigation</p>
+            <ul class="footer-list">
+              <li><a href="#top">Home</a></li>
+              <li><a href="#portfolio">Selected Works</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#architect">Ar. Parthit Sangani</a></li>
+              <li><a href="#contact">Studio Contact</a></li>
+              <li><a href="./appointment.html" style="font-weight: 500; color: var(--bronze-light)">Appointment (WhatsApp)</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-desk-col">
+            <p class="footer-heading">Studio Desk</p>
+            <ul class="footer-list">
+              <li>
+                <a href="tel:+917622005681">
+                  <i data-lucide="phone" style="width: 16px; height: 16px; color: var(--bronze)"></i>
+                  <span>+91 76220 05681</span>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:sanganidesignstudio@gmail.com">
+                  <i data-lucide="mail" style="width: 16px; height: 16px; color: var(--bronze)"></i>
+                  <span>sanganidesignstudio@gmail.com</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/sangani_design_studio/" target="_blank" rel="noopener noreferrer">
+                  <i data-lucide="instagram" style="width: 16px; height: 16px; color: var(--bronze)"></i>
+                  <span>@sangani_design_studio</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://maps.app.goo.gl/1FyUN5CiPzHSt5fXA" target="_blank" rel="noopener noreferrer" style="align-items: flex-start">
+                  <i data-lucide="map-pin" style="width: 16px; height: 16px; flex-shrink: 0; margin-top: 2px; color: var(--bronze)"></i>
+                  <span>B-234, 2nd Floor, Sun Trade Center, Near Gujarat Gas Office, G.I.D.C. Char Rasta, N.H.48, Vapi - 396195</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p style="margin: 0">© <span id="footer-year"></span> Sangani Design Studio • Ar. Parthit Sangani. All rights reserved.</p>
+          <p class="font-mono" style="margin: 0; letter-spacing: 0.08em">ARCHITECTURE | INTERIOR DESIGNING • VAPI</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =================================================================
+         FLOATING DOCK
+         ================================================================= -->
+    <div class="floating-dock">
+      <button type="button" id="scroll-top-btn" class="scroll-top-btn" aria-label="Scroll to top">
+        <i data-lucide="chevron-up" style="width: 20px; height: 20px"></i>
+      </button>
+    </div>
+
+    <!-- =================================================================
+         PROJECT DETAIL MODAL
+         ================================================================= -->
+    <div id="project-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal-card" id="modal-card">
+        <button type="button" id="modal-close-btn" class="modal-close" aria-label="Close modal">
+          <i data-lucide="x" style="width: 20px; height: 20px"></i>
+        </button>
+
+        <div class="modal-img-wrap">
+          <img id="modal-img" src="" alt="" />
+        </div>
+
+        <div class="modal-content">
+          <div id="modal-meta" class="font-mono" style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.18em; color: var(--bronze-dark)"></div>
+          <h3 id="modal-title" class="modal-title"></h3>
+          <p id="modal-summary" style="margin: 0.875rem 0 0; font-size: 0.95rem; line-height: 1.65; color: var(--body-muted)"></p>
+
+          <div class="modal-palette-box">
+            <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em">
+              <i data-lucide="layers" style="width: 16px; height: 16px; color: var(--bronze)"></i>
+              <span>Materiality &amp; Finish Palette</span>
+            </div>
+            <div id="modal-palette" class="flex-wrap-gap" style="margin-top: 0.75rem; gap: 0.5rem"></div>
+          </div>
+
+          <div class="modal-footer">
+            <span style="font-size: 12px; color: var(--stone)">
+              Scope: <strong id="modal-scope" style="color: var(--obsidian)"></strong>
+            </span>
+            <a id="modal-inquire-link" href="./appointment.html" class="btn-anim btn-primary btn-md">
+              <i data-lucide="calendar" style="width: 16px; height: 16px; color: var(--bronze-light)"></i>
+              <span>Inquire Similar Project</span>
+              <span class="btn-icon-right"><i data-lucide="arrow-up-right" style="width: 16px; height: 16px"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Official Lucide Browser Bundle + Vanilla Studio Script -->
+    <script src="https://unpkg.com/lucide@0.511.0/dist/umd/lucide.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

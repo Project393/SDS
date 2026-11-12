@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#f7f4ee" />
+    <title>Book Appointment | Sangani Design Studio — Ar. Parthit Sangani</title>
+    <meta
+      name="description"
+      content="Schedule an architectural or interior design consultation with Ar. Parthit Sangani at Sangani Design Studio, Vapi via WhatsApp."
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/favicon.png" />
+    <link rel="icon" type="image/png" href="./images/SDS Logo.png" />
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="scroll-progress" class="scroll-progress"></div>
+
+    <!-- Header -->
+    <header id="site-header" class="site-header solid-header">
+      <div class="container header-inner">
+        <a href="./index.html" class="brand-lockup">
+          <div class="brand-badge">
+            <img src="./images/sds-logo-trans.png" alt="Sangani Design Studio Logo" class="brand-logo-img" />
+          </div>
+          <div>
+            <span class="brand-title">Sangani Design Studio</span>
+            <span class="brand-sub">Ar. Parthit Sangani</span>
+          </div>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Primary Navigation">
+          <a href="./index.html#top" class="nav-link">Home</a>
+          <a href="./index.html#portfolio" class="nav-link">Portfolio</a>
+          <a href="./index.html#services" class="nav-link">Services</a>
+          <a href="./index.html#architect" class="nav-link">The Architect</a>
+          <a href="./index.html#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="desktop-actions">
+          <a href="tel:+917622005681" class="phone-pill">
+            <i data-lucide="phone" style="width: 14px; height: 14px; color: var(--bronze)"></i>
+            <span>+91 76220 05681</span>
+          </a>
+          <a href="#appointment-form" class="btn-anim btn-bronze btn-sm" style="text-transform: uppercase; letter-spacing: 0.08em">
+            <i data-lucide="calendar" style="width: 14px; height: 14px"></i>
+            <span>Booking Consultation</span>
+            <span class="btn-icon-right"><i data-lucide="arrow-up-right" style="width: 15px; height: 15px"></i></span>
+          </a>
+        </div>
+
+        <div class="mobile-actions">
+          <a href="./index.html" class="mobile-book-btn">
+            <i data-lucide="arrow-left" style="width: 14px; height: 14px"></i>
+            <span><span class="hide-xs">Studio </span>Home</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="appointment-main arch-grid-bg">
+      <div class="container">
+        <!-- Back Button & Page Heading -->
+        <div class="hero-fade" style="margin-bottom: 2rem">
+          <a href="./index.html" class="back-pill-btn">
+            <i data-lucide="arrow-left" style="width: 14px; height: 14px"></i>
+            <span>Back to Studio Home</span>
+          </a>
+
+          <div class="section-header" style="margin-top: 1.5rem">
+            <div>
+              <span class="section-kicker" style="display: inline-flex; align-items: center; gap: 0.5rem">
+                <i data-lucide="message-circle" style="width: 14px; height: 14px; color: var(--whatsapp)"></i>
+                Consultation Booking
+              </span>
+              <h1 class="hero-title" style="font-size: clamp(2rem, 6.2vw, 3.6rem); margin-top: 0.5rem">
+                Book Your Design <span class="italic-accent">Appointment</span>
+              </h1>
+            </div>
+            <p class="section-desc">
+              Configure your project brief below. Submitting prepares your structured consultation summary and redirects straight to
+              <strong style="color: var(--obsidian)">Ar. Parthit Sangani</strong> on WhatsApp.
+            </p>
+          </div>
+        </div>
+
+        <form id="appointment-form" class="appointment-layout" novalidate>
+          <!-- Left Column: Steps 01 - 04 -->
+          <div class="appointment-form-col" style="display: flex; flex-direction: column; gap: 2rem">
+            <!-- Step 01 -->
+            <section class="form-step-card reveal-item reveal-up">
+              <span class="step-kicker">Step 01</span>
+              <h2 class="step-heading">What are we designing together?</h2>
+
+              <div class="service-option-grid" id="service-options">
+                <button type="button" class="option-card" data-service="Architectural Design">
+                  <div class="option-icon-wrap"><i data-lucide="compass" style="width: 20px; height: 20px"></i></div>
+                  <div style="padding-right: 1.25rem">
+                    <p style="margin: 0; font-size: 0.875rem; font-weight: 600">Architectural Design</p>
+                    <p style="margin: 0.2rem 0 0; font-size: 0.75rem; opacity: 0.75">New bungalow, villa, or ground-up building</p>
+                  </div>
+                  <span class="option-check"><i data-lucide="check" style="width: 12px; height: 12px"></i></span>
+                </button>
+
+                <button type="button" class="option-card active" data-service="Luxury Interior Design">
+                  <div class="option-icon-wrap"><i data-lucide="armchair" style="width: 20px; height: 20px"></i></div>
+                  <div style="padding-right: 1.25rem">
+                    <p style="margin: 0; font-size: 0.875rem; font-weight: 600">Interior Designing</p>
+                    <p style="margin: 0.2rem 0 0; font-size: 0.75rem; opacity: 0.75">Complete home, apartment, or villa interiors</p>
+                  </div>
+                  <span class="option-check"><i data-lucide="check" style="width: 12px; height: 12px"></i></span>
+                </button>
+
+                <button type="button" class="option-card" data-service="Commercial &amp; Workspaces">
+                  <div class="option-icon-wrap"><i data-lucide="building-2" style="width: 20px; height: 20px"></i></div>
+                  <div style="padding-right: 1.25rem">
+                    <p style="margin: 0; font-size: 0.875rem; font-weight: 600">Commercial / Office</p>
+                    <p style="margin: 0.2rem 0 0; font-size: 0.75rem; opacity: 0.75">Offices, showrooms, clinics, or hospitality</p>
+                  </div>
+                  <span class="option-check"><i data-lucide="check" style="width: 12px; height: 12px"></i></span>
+                </button>
+
+                <button type="button" class="option-card" data-service="Turnkey Execution">
+                  <div class="option-icon-wrap"><i data-lucide="ruler" style="width: 20px; height: 20px"></i></div>
+                  <div style="padding-right: 1.25rem">
+                    <p style="margin: 0; font-size: 0.875rem; font-weight: 600">Turnkey Project</p>
+                    <p style="margin: 0.2rem 0 0; font-size: 0.75rem; opacity: 0.75">End-to-end design + material + site build</p>
+                  </div>
+                  <span class="option-check"><i data-lucide="check" style="width: 12px; height: 12px"></i></span>
+                </button>
+
+                <button type="button" class="option-card" data-service="Vastu &amp; Renovation">
+                  <div class="option-icon-wrap"><i data-lucide="sparkles" style="width: 20px; height: 20px"></i></div>
+                  <div style="padding-right: 1.25rem">
+                    <p style="margin: 0; font-size: 0.875rem; font-weight: 600">Renovation &amp; Facade</p>
+                    <p style="margin: 0.2rem 0 0; font-size: 0.75rem; opacity: 0.75">Modernizing existing residence or elevation</p>
+                  </div>
+                  <span class="option-check"><i data-lucide="check" style="width: 12px; height: 12px"></i></span>
+                </button>
+
+                <button type="button" class="option-card" data-service="3D Visualization &amp; Consultation">
+                  <div class="option-icon-wrap"><i data-lucide="layers" style="width: 20px; height: 20px"></i></div>
+                  <div style="padding-right: 1.25rem">
+                    <p style="margin: 0; font-size: 0.875rem; font-weight: 600">Design Consultation</p>
+                    <p style="margin: 0.2rem 0 0; font-size: 0.75rem; opacity: 0.75">Layout review, 3D concept, or advisory</p>
+                  </div>
+                  <span class="option-check"><i data-lucide="check" style="width: 12px; height: 12px"></i></span>
+                </button>
+              </div>
+            </section>
+
+            <!-- Step 02 -->
+            <section class="form-step-card reveal-item reveal-up">
+              <span class="step-kicker">Step 02</span>
+              <h2 class="step-heading">Property Type &amp; Scale</h2>
+
+              <div style="margin-top: 1.25rem">
+                <span class="field-label">Property Category</span>
+                <div class="pill-select-group" id="property-options">
+                  <button type="button" class="pill-choice active" data-property="Residential Villa / Bungalow">Residential Villa / Bungalow</button>
+                  <button type="button" class="pill-choice" data-property="Apartment / Penthouse">Apartment / Penthouse</button>
+                  <button type="button" class="pill-choice" data-property="Office / Corporate Space">Office / Corporate Space</button>
+                  <button type="button" class="pill-choice" data-property="Retail / Showroom">Retail / Showroom</button>
+                  <button type="button" class="pill-choice" data-property="Hospitality / Cafe">Hospitality / Cafe</button>
+                  <button type="button" class="pill-choice" data-property="Plot / New Construction">Plot / New Construction</button>
+                </div>
+              </div>
+
+              <div class="grid-2-sm" style="margin-top: 1.5rem">
+                <div>
+                  <label for="areaSqFt" class="field-label">
+                    Approx. Area (sq.ft) <span style="color: var(--bronze-dark)">(Optional)</span>
+                  </label>
+                  <input id="areaSqFt" type="text" enterkeyhint="next" class="arch-input" placeholder="e.g. 2,400 sq.ft / 3 BHK" />
+                </div>
+
+                <div>
+                  <span class="field-label">Estimated Budget</span>
+                  <div class="pill-select-group" id="budget-options" style="gap: 0.375rem; margin-top: 0.5rem">
+                    <button type="button" class="budget-choice" data-budget="Under ₹15 Lakhs">Under ₹15 Lakhs</button>
+                    <button type="button" class="budget-choice active" data-budget="₹15L – ₹35 Lakhs">₹15L – ₹35 Lakhs</button>
+                    <button type="button" class="budget-choice" data-budget="₹35L – ₹75 Lakhs">₹35L – ₹75 Lakhs</button>
+                    <button type="button" class="budget-choice" data-budget="₹75L – ₹1.5 Cr+">₹75L – ₹1.5 Cr+</button>
+                    <button type="button" class="budget-choice" data-budget="Let's Discuss on Call">Let's Discuss on Call</button>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Step 03 -->
+            <section class="form-step-card reveal-item reveal-up">
+              <span class="step-kicker">Step 03</span>
+              <h2 class="step-heading">Meeting Mode &amp; Schedule</h2>
+
+              <div class="mode-grid" id="mode-options">
+                <button type="button" class="mode-card active" data-mode="Studio Visit (Vapi)">
+                  <i data-lucide="map-pin" style="width: 20px; height: 20px"></i>
+                  <div class="mode-card-body">
+                    <p class="mode-card-title">Visit Studio (Vapi)</p>
+                    <p class="mode-card-sub">Sun Trade Center, GIDC Char Rasta</p>
+                  </div>
+                </button>
+
+                <button type="button" class="mode-card" data-mode="On-Site Consultation">
+                  <i data-lucide="building" style="width: 20px; height: 20px"></i>
+                  <div class="mode-card-body">
+                    <p class="mode-card-title">Site Visit</p>
+                    <p class="mode-card-sub">Architect visits your property</p>
+                  </div>
+                </button>
+
+                <button type="button" class="mode-card" data-mode="Video / Phone Call">
+                  <i data-lucide="video" style="width: 20px; height: 20px"></i>
+                  <div class="mode-card-body">
+                    <p class="mode-card-title">Video / Phone Call</p>
+                    <p class="mode-card-sub">Remote architectural discussion</p>
+                  </div>
+                </button>
+              </div>
+
+              <div class="grid-2-sm" style="margin-top: 1.5rem">
+                <div>
+                  <label for="preferredDate" class="field-label">
+                    <i data-lucide="calendar" style="width: 14px; height: 14px; color: var(--bronze)"></i>
+                    <span>Preferred Date</span>
+                  </label>
+                  <input id="preferredDate" type="date" class="arch-input" />
+                </div>
+
+                <div>
+                  <span class="field-label">
+                    <i data-lucide="clock" style="width: 14px; height: 14px; color: var(--bronze)"></i>
+                    <span>Preferred Time Slot</span>
+                  </span>
+                  <div class="slots-grid" id="slot-options">
+                    <button type="button" class="slot-btn" data-slot="10:30 AM">10:30 AM</button>
+                    <button type="button" class="slot-btn active" data-slot="12:00 PM">12:00 PM</button>
+                    <button type="button" class="slot-btn" data-slot="02:30 PM">02:30 PM</button>
+                    <button type="button" class="slot-btn" data-slot="04:00 PM">04:00 PM</button>
+                    <button type="button" class="slot-btn" data-slot="05:30 PM">05:30 PM</button>
+                    <button type="button" class="slot-btn" data-slot="06:45 PM">06:45 PM</button>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Step 04 -->
+            <section class="form-step-card reveal-item reveal-up">
+              <span class="step-kicker">Step 04</span>
+              <h2 class="step-heading">Your Contact Details</h2>
+
+              <div class="grid-2-sm" style="margin-top: 1.25rem">
+                <div>
+                  <label for="fullName" class="field-label">
+                    <i data-lucide="user" style="width: 14px; height: 14px; color: var(--bronze)"></i>
+                    <span>Full Name</span>
+                    <span style="color: #c2410c">*</span>
+                  </label>
+                  <input id="fullName" type="text" required autocomplete="name" autocapitalize="words" enterkeyhint="next" class="arch-input" placeholder="Enter your full name" />
+                </div>
+
+                <div>
+                  <label for="clientPhone" class="field-label">
+                    <i data-lucide="phone" style="width: 14px; height: 14px; color: var(--bronze)"></i>
+                    <span>Phone / WhatsApp</span>
+                    <span style="color: #c2410c">*</span>
+                  </label>
+                  <input id="clientPhone" type="tel" required inputmode="tel" autocomplete="tel" enterkeyhint="next" class="arch-input" placeholder="+91 98XXX XXXXX" />
+                </div>
+
+                <div class="col-span-2-sm">
+                  <label for="city" class="field-label">
+                    <i data-lucide="map-pin" style="width: 14px; height: 14px; color: var(--bronze)"></i>
+                    <span>Site City / Locality</span>
+                  </label>
+                  <input id="city" type="text" value="Vapi" autocomplete="address-level2" enterkeyhint="next" class="arch-input" placeholder="e.g. Chala Vapi, GIDC, Daman, Valsad, Silvassa" />
+                </div>
+
+                <div class="col-span-2-sm">
+                  <label for="notes" class="field-label">Project Notes / Style Preferences</label>
+                  <textarea id="notes" rows="3" enterkeyhint="done" class="arch-input" placeholder="Share anything helpful — plot status, possession timeline, minimalist/modern taste, Vastu requirements..."></textarea>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!-- Right Column: Sticky Live Summary & Redirect -->
+          <div class="appointment-summary-col">
+            <div class="sticky-summary" style="display: flex; flex-direction: column; gap: 1.5rem">
+              <div class="summary-panel" id="summary-panel">
+                <div class="summary-header">
+                  <div>
+                    <p class="card-kicker" style="color: var(--bronze-light)">Instant WhatsApp Dispatch</p>
+                    <h3 style="margin: 0.25rem 0 0; font-size: 1.5rem; font-weight: 500">Consultation Summary</h3>
+                  </div>
+                  <div class="summary-icon-badge">
+                    <i data-lucide="message-circle" style="width: 20px; height: 20px"></i>
+                  </div>
+                </div>
+
+                <div class="summary-rows">
+                  <div class="summary-row">
+                    <span class="summary-key">Architect</span>
+                    <span class="summary-val">Ar. Parthit Sangani</span>
+                  </div>
+                  <div class="summary-row">
+                    <span class="summary-key">Service</span>
+                    <span class="summary-val" id="sum-service" style="color: var(--bronze-light)">Luxury Interior Design</span>
+                  </div>
+                  <div class="summary-row">
+                    <span class="summary-key">Property</span>
+                    <span class="summary-val" id="sum-property">Residential Villa / Bungalow</span>
+                  </div>
+                  <div class="summary-row">
+                    <span class="summary-key">Budget</span>
+                    <span class="summary-val" id="sum-budget">₹15L – ₹35 Lakhs</span>
+                  </div>
+                  <div class="summary-row">
+                    <span class="summary-key">Schedule</span>
+                    <span class="summary-val" id="sum-schedule">Tomorrow • 12:00 PM</span>
+                  </div>
+                  <div class="summary-row">
+                    <span class="summary-key">Mode</span>
+                    <span class="summary-val" id="sum-mode">Studio Visit (Vapi)</span>
+                  </div>
+                </div>
+
+                <div class="summary-preview-box">
+                  <div style="margin-bottom: 0.5rem">
+                    <span class="font-mono" style="font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--dark-muted)">
+                      WhatsApp Message Preview
+                    </span>
+                  </div>
+                  <pre id="whatsapp-preview" class="summary-pre"></pre>
+                </div>
+
+                <div id="form-error" class="error-alert hidden">
+                  <i data-lucide="alert-circle" style="width: 16px; height: 16px; flex-shrink: 0; color: #fca5a5"></i>
+                  <span id="form-error-text"></span>
+                </div>
+
+                <div style="margin-top: 1.5rem">
+                  <button type="submit" class="btn-anim btn-whatsapp btn-lg" style="width: 100%">
+                    <span>Confirm</span>
+                    <span class="btn-icon-right"><i data-lucide="send" style="width: 16px; height: 16px"></i></span>
+                  </button>
+                  <p style="margin: 0.75rem 0 0; text-align: center; font-size: 11px; color: var(--dark-muted)">
+                    Redirects securely to WhatsApp (+91 76220 05681)
+                  </p>
+                </div>
+
+                <div id="redirect-success" class="redirect-success-box hidden">
+                  <div style="display: flex; align-items: flex-start; gap: 0.625rem">
+                    <i data-lucide="check-circle-2" style="width: 16px; height: 16px; flex-shrink: 0; margin-top: 2px; color: var(--emerald)"></i>
+                    <div>
+                      <p style="margin: 0; font-weight: 600">WhatsApp window triggered!</p>
+                      <p style="margin: 0.25rem 0 0; color: #c5e8d3">
+                        If WhatsApp did not open automatically due to popup settings, click the direct button below:
+                      </p>
+                      <a id="direct-wa-link" href="#" target="_blank" rel="noopener noreferrer" style="margin-top: 0.75rem; display: inline-flex; align-items: center; gap: 0.375rem; border-radius: 9999px; background-color: var(--emerald); color: var(--obsidian); padding: 0.5rem 1rem; font-weight: 600">
+                        <span>Open WhatsApp Chat Now</span>
+                        <i data-lucide="external-link" style="width: 14px; height: 14px"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Studio Location & Socials Box -->
+              <div class="form-step-card">
+                <p class="card-kicker" style="color: var(--bronze-dark)">Studio Location &amp; Socials</p>
+                <p style="margin: 0.5rem 0 0; font-size: 0.875rem; font-weight: 500; line-height: 1.55">
+                  B-234, 2nd Floor, Sun Trade Center, Near Gujarat Gas Office, G.I.D.C. Char Rasta, N.H.48, Vapi - 396195
+                </p>
+                <div class="flex-wrap-gap" style="margin-top: 1rem">
+                  <a href="https://maps.app.goo.gl/1FyUN5CiPzHSt5fXA" target="_blank" rel="noopener noreferrer" class="btn-anim btn-outline btn-sm">
+                    <i data-lucide="map-pin" style="width: 14px; height: 14px; color: var(--bronze)"></i>
+                    <span>Google Maps</span>
+                    <span class="btn-icon-right"><i data-lucide="arrow-up-right" style="width: 14px; height: 14px"></i></span>
+                  </a>
+                  <a href="https://www.instagram.com/sangani_design_studio/" target="_blank" rel="noopener noreferrer" class="btn-anim btn-outline btn-sm">
+                    <i data-lucide="instagram" style="width: 14px; height: 14px; color: var(--bronze)"></i>
+                    <span>Instagram</span>
+                    <span class="btn-icon-right"><i data-lucide="arrow-up-right" style="width: 14px; height: 14px"></i></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- Mobile Sticky Consultation Dispatch Bar -->
+    <div id="mobile-sticky-cta" class="mobile-sticky-cta">
+      <div class="mobile-sticky-info">
+        <span id="mobile-sticky-service" class="mobile-sticky-service">Luxury Interior Design</span>
+        <span id="mobile-sticky-meta" class="mobile-sticky-meta">Tomorrow • 12:00 PM</span>
+      </div>
+      <button type="submit" form="appointment-form" class="btn-anim btn-whatsapp btn-sm mobile-sticky-btn">
+        <i data-lucide="message-circle" style="width: 15px; height: 15px"></i>
+        <span>Send via WhatsApp</span>
+      </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-bottom" style="margin-top: 0">
+          <p style="margin: 0">© <span id="footer-year"></span> Sangani Design Studio • Ar. Parthit Sangani. All rights reserved.</p>
+          <p class="font-mono" style="margin: 0; letter-spacing: 0.08em">ARCHITECTURE | INTERIOR DESIGNING • VAPI</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@0.511.0/dist/umd/lucide.min.js"></script>
+    <script src="./appointment.js"></script>
+  </body>
+</html>
